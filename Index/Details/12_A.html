@@ -1,0 +1,52 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Examining <font color="#000080">something</font> </b><a name=Examine></a> (requires light) (<i>past tense</i> examined)<br>
+<p>The act of looking closely at
+something. Note that the noun could be either a direction or a thing, which
+is why the Standard Rules include the 'examine directions rule' to deal with
+directions: it simply says 'You see nothing unexpected in that direction.'
+and stops the action. (If you would like to handle directions differently,
+list another rule instead of this one in the carry out examining rules.)<br><br>For arcane reasons to do with the Inform 6 library underlying what Inform
+does, these rules test to see 'if the noun goes undescribed by source
+text' (rather than more simply testing whether the description property
+of the noun is blank). If so, we search (i.e., look inside) a container,
+and show the status (switched on or off) of a device, but otherwise
+give up with a bland response. For traditional reasons, we also show
+the status of a device as a second paragraph even after any description
+property has been printed: this is done by the examine described devices
+rule.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;look at [something]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;examine [something]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;read [something]&quot;<br><p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">examine undescribed containers rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">examine undescribed devices rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">examine undescribed things rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">examine directions rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">standard examining rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">examine described devices rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor examining</i>&nbsp;&nbsp;<font color="#800000">report other people examining rule</font><br>
+<p><p></font></body></html>

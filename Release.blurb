@@ -1,0 +1,9 @@
+! Blurb file created by NI build 5U92
+variable [RELEASE] = "1"
+storyfile "C:\Users\Stever\Documents\Inform\Projects\Castalia.inform\Build\output.z5" include
+metadata "C:\Users\Stever\Documents\Inform\Projects\Castalia.inform\Metadata.iFiction" include
+variable [YEAR] = "2010"
+variable [TITLE] = "Castalia"
+variable [AUTHOR] = "Stephen Rowley"
+variable [BLURB] = "A work of interactive fiction."
+variable [IFID] = "040FFF3C-D5BD-4AF3-B333-9EA6A01F294F"

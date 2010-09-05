@@ -1,0 +1,54 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Opening <font color="#000080">something</font> </b><a name=Open></a> (<i>past tense</i> opened)<br>
+<p>Opening makes something no longer
+a physical barrier. The action can be performed on any kind of thing which
+provides the either/or properties openable and open. The 'can't open unless
+openable rule' tests to see if the noun both can be and actually is openable.
+(It is assumed that anything which can be openable can also be open.)
+In the Standard Rules, the container and door kinds both satisfy these
+requirements.<br><br>In the event that the thing to be opened is also lockable, we are forbidden
+to open it when it is locked. Both containers and doors can be lockable,
+but the opening and closing actions would also work fine with kinds which
+cannot be.<br><br>We can create a new kind on which opening and closing will work thus:
+'A case file is a kind of thing. A case file can be openable.
+A case file can be open. A case file is usually openable and closed.'<br><br>The meaning of open and closed is different for different kinds of thing.
+When a container is closed, that means people outside cannot reach in,
+and vice versa; when a door is closed, people cannot use the 'going' action
+to pass through it. If we were to create a new kind such as 'case file',
+we would also need to write rules to make the open and closed properties
+interesting for this kind.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;open [something]&quot;<br><p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">can't open unless openable rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">can't open what's locked rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">can't open what's already open rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">standard opening rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">reveal any newly visible interior rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor opening</i>&nbsp;&nbsp;<font color="#800000">standard report opening rule</font><br>
+<p><p></font></body></html>

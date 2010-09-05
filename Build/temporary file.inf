@@ -1,0 +1,13 @@
+      ! phrase 1
+      ! [1: if the score is not the last notified score begin]
+       if (~~((score == last_score)))  {
+         ! phrase 2
+         ! [2: issue score notification message]
+          NotifyTheScore(); 
+         ! phrase 3
+         ! [3: now the last notified score is the score]
+          last_score = score; 
+         ! phrase 4
+         ! [4: end if]
+         }
+

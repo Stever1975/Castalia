@@ -1,0 +1,75 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Looking </b><a name=Look></a> (<i>past tense</i> looked)<br>
+<p>The looking action describes the
+player's current room and any visible items, but is made more complicated
+by the problem of visibility. Inform calculates this by dividing the room
+into visibility levels. For an actor on the floor of a room, there is only
+one such level: the room itself. But an actor sitting on a chair inside
+a packing case which is itself on a gantry would have four visibility levels:
+chair, case, gantry, room. The looking rules use a special phrase, 'the
+visibility-holder of X', to go up from one level to the next: thus the
+visibility-holder of the case is the gantry.<br><br>The 'visibility level count' is the number of levels which the player can
+actually see, and the 'visibility ceiling' is the uppermost visible level.
+For a player standing on the floor of a lighted room, this will be a count
+of 1 with the ceiling set to the room. But a player sitting on a chair in
+a closed opaque packing case would have visibility level count 2, and
+visibility ceiling equal to the case. Moreover, light has to be available
+in order to see anything at all: if the player is in darkness, the level
+count is 0 and the ceiling is nothing.<br><br>Finally, note that several actions other than looking also produce room
+descriptions in some cases. The most familiar is going, but exiting a
+container or getting off a supporter will also generate a room description.
+(The phrase used by the relevant rules is 'produce a room description with
+going spacing conventions' and carry out or report rules for newly written
+actions are welcome to use this too if they would like to. The spacing
+conventions affect paragraph division, and note that the main description
+paragraph may be omitted for a place not newly visited, depending on the
+VERBOSE settings.) Room descriptions like this are produced by running the
+check, carry out and report rules for looking, but are not subject to
+before, instead or after rules: so they do not count as a new action. The
+looking variable 'room-describing action' holds the action name of the
+reason a room description is currently being made: if the player typed
+LOOK, this will indeed be set to the looking action, but if we're
+describing a room just reached by GO EAST, say, it will be set to the going
+action. This can be used to customise carry out looking rules so that
+different forms of description are used on going to a room as compared with
+looking around while already there.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;look&quot;<br><p><b>Named values belonging to this action</b><p>
+room-describing action ... <i>an action name</i><br>
+abbreviated form allowed ... <i>something which is either true or false</i><br>
+visibility level count ... <i>a number</i><br>
+visibility ceiling ... <i>the name of an object</i><br>
+<p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;set action variables&nbsp;&nbsp;&nbsp;&nbsp;<i>looking</i>&nbsp;&nbsp;<font color="#800000">determine visibility ceiling rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">room description heading rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">room description body text rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">room description paragraphs about objects rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">check new arrival rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor looking</i>&nbsp;&nbsp;<font color="#800000">other people looking rule</font><br>
+<p><p></font></body></html>

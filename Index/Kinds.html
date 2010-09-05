@@ -1,0 +1,120 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b>Kinds</b><p>
+object<br>
+&nbsp;&nbsp;&nbsp;&nbsp;room [1]&nbsp;<a href=#K1_room><img border=0 src=inform:/Below.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;thing [3]&nbsp;<a href=#K2_thing><img border=0 src=inform:/Below.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;door&nbsp;<a href=#K4_door><img border=0 src=inform:/Below.png></a>&nbsp;<a href=inform:/doc38.html><img border=0 src=inform:/help.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;container&nbsp;<a href=#K5_container><img border=0 src=inform:/Below.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vehicle&nbsp;<a href=#K27_vehicle><img border=0 src=inform:/Below.png></a>&nbsp;<a href=inform:/doc42.html><img border=0 src=inform:/help.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player's holdall&nbsp;<a href=#K28_player_s_holdall><img border=0 src=inform:/Below.png></a>&nbsp;<a href=inform:/doc47.html><img border=0 src=inform:/help.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;supporter&nbsp;<a href=#K6_supporter><img border=0 src=inform:/Below.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;backdrop&nbsp;<a href=#K7_backdrop><img border=0 src=inform:/Below.png></a>&nbsp;<a href=inform:/doc35.html><img border=0 src=inform:/help.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;person [2]&nbsp;<a href=#K8_person><img border=0 src=inform:/Below.png></a>&nbsp;<a href=inform:/doc43.html><img border=0 src=inform:/help.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;man [1]&nbsp;<a href=#K23_man><img border=0 src=inform:/Below.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;woman&nbsp;<a href=#K24_woman><img border=0 src=inform:/Below.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;animal&nbsp;<a href=#K25_animal><img border=0 src=inform:/Below.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;device&nbsp;<a href=#K26_device><img border=0 src=inform:/Below.png></a>&nbsp;<a href=inform:/doc40.html><img border=0 src=inform:/help.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;direction [12]&nbsp;<a href=#K3_direction><img border=0 src=inform:/Below.png></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;region&nbsp;<a href=#K9_region><img border=0 src=inform:/Below.png></a><br>
+value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;<a href=#A54><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;time&nbsp;<a href=#A55><img border=0 src=inform:/Below.png></a>&nbsp;<a href=inform:/doc139.html><img border=0 src=inform:/help.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;<a href=#A56><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;snippet&nbsp;<a href=#A59><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;object&nbsp;<a href=#A61><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;description&nbsp;<a href=#A62><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;rule&nbsp;<a href=#A65><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;rulebook&nbsp;<a href=#A66><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;action-name&nbsp;<a href=#A68><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;scene&nbsp;<a href=#A70><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;table-name&nbsp;<a href=#A71><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;figure-name&nbsp;<a href=#A75><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;sound-name&nbsp;<a href=#A76><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;external-file&nbsp;<a href=#A77><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;truth state&nbsp;<a href=#A78><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;indexed text&nbsp;<a href=#A80><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;stored action&nbsp;<a href=#A81><img border=0 src=inform:/Below.png></a><br>&nbsp;&nbsp;&nbsp;&nbsp;list of&nbsp;<a href=#A82><img border=0 src=inform:/Below.png></a><br><p><i>What are kinds?</i>&nbsp;<a href=inform:/doc31.html><img border=0 src=inform:/help.png></a>; <i>Kinds of value</i>&nbsp;<a href=inform:/doc61.html><img border=0 src=inform:/help.png></a><p><hr><p class="in1"><a name=K1_room></a><b>room</b> (<i>plural</i> rooms)<br>
+Represents geographical locations, both indoor
+and outdoor, which are not necessarily areas in a building. A player in one
+room is mostly unable to sense, or interact with, anything in a different room.
+Rooms are arranged in a map.<br><i>Usually</i> lighted <i>not</i> dark, unvisited <i>not</i> visited.<br><i>Can have</i> description (<i>some text</i>), printed name (<i>some text</i>), map region (<i>the name of an object</i>).<br><i>Gate</i>&nbsp;<a href="source:story.ni#line6"><img border=0 src=inform:/Reveal.png></a><p class="in1"><a name=K2_thing></a><b>thing</b> (<i>plural</i> things)<br>
+Represents anything interactive in the model
+world that is not a room. People, pieces of scenery, furniture, doors and
+mislaid umbrellas might all be examples, and so might more surprising things
+like the sound of birdsong or a shaft of sunlight.<br><i>Usually</i> unlit <i>not</i> lit, inedible <i>not</i> edible, portable <i>not</i> fixed in place, singular-named <i>not</i> plural-named, improper-named <i>not</i> proper-named, described <i>not</i> undescribed, unmarked for listing <i>not</i> marked for listing, mentioned <i>not</i> unmentioned.<br><i>Usually not</i> scenery, wearable, pushable between rooms, handled, initially carried.<br><i>Can have</i> description (<i>some text</i>), printed name (<i>some text</i>), indefinite article (<i>some text</i>), initial appearance (<i>some text</i>), printed plural name (<i>some text</i>), matching key (<i>the name of an object</i>).<br><i>bell</i>&nbsp;<a href="source:story.ni#line7"><img border=0 src=inform:/Reveal.png></a><p class="in2"><a name=K4_door></a><b>door</b>, a kind of thing (<i>plural</i> doors)&nbsp;<a href=inform:/doc38.html><img border=0 src=inform:/help.png></a><br>
+Represents a conduit joining two rooms, most
+often a door or gate but sometimes a plank bridge, a slide or a hatchway.
+Usually visible and operable from both sides (for instance if you write
+'The blue door is east of the Ballroom and west of the Garden.'), but
+sometimes only one-way (for instance if you write 'East of the Ballroom is
+the long slide. Through the long slide is the cellar.').<br><i>Always</i> fixed in place <i>not</i> portable.<br><i>Usually</i> closed <i>not</i> open, openable <i>not</i> unopenable, unlocked <i>not</i> locked.<br><i>Usually not</i> lockable.<br><i>Never</i> pushable between rooms.<br><i>Can have</i> other side (<i>the name of an object</i>).<br><p><p class="in2"><a name=K5_container></a><b>container</b>, a kind of thing (<i>plural</i> containers)<br>
+Represents something into which portable
+things can be put, such as a teachest or a handbag. Something with a really
+large immobile interior, such as the Albert Hall, had better be a room
+instead.<br><i>Usually</i> opaque <i>not</i> transparent, open <i>not</i> closed, unopenable <i>not</i> openable, unlocked <i>not</i> locked.<br><i>Usually not</i> enterable, lockable.<br><i>Can have</i> carrying capacity (<i>a number</i>).<br><p class="in3"><a name=K27_vehicle></a><b>vehicle</b>, a kind of container (<i>plural</i> vehicles)&nbsp;<a href=inform:/doc42.html><img border=0 src=inform:/help.png></a><br>
+Represents a container large enough for
+a person to enter, and which can then move between rooms at the driver's
+instruction. (If a supporter is needed instead, try the extension
+Rideable Vehicles by Graham Nelson.)<br><i>Always</i> enterable.<br><i>Usually</i> fixed in place <i>not</i> portable.<br><p><p class="in3"><a name=K28_player_s_holdall></a><b>player's holdall</b>, a kind of container (<i>plural</i> player's holdalls)&nbsp;<a href=inform:/doc47.html><img border=0 src=inform:/help.png></a><br>
+Represents a container which the
+player can carry around as a sort of rucksack, into which spare items are
+automatically stowed away.<br><i>Always</i> portable <i>not</i> fixed in place.<br><i>Usually</i> openable <i>not</i> unopenable.<br><p><p><p class="in2"><a name=K6_supporter></a><b>supporter</b>, a kind of thing (<i>plural</i> supporters)<br>
+Represents a surface on which things can be
+placed, such as a table.<br><i>Usually</i> fixed in place <i>not</i> portable.<br><i>Usually not</i> enterable.<br><i>Can have</i> carrying capacity (<i>a number</i>).<br><p><p class="in2"><a name=K7_backdrop></a><b>backdrop</b>, a kind of thing (<i>plural</i> backdrops)&nbsp;<a href=inform:/doc35.html><img border=0 src=inform:/help.png></a><br>
+Represents an aspect of the landscape
+or architecture which extends across more than one room: for instance,
+a stream, the sky or a long carpet.<br><i>Always</i> fixed in place <i>not</i> portable.<br><i>Usually</i> scenery.<br><i>Never</i> pushable between rooms.<br><p><p class="in2"><a name=K8_person></a><b>person</b>, a kind of thing (<i>plural</i> people)&nbsp;<a href=inform:/doc43.html><img border=0 src=inform:/help.png></a><br>
+Despite the name, not necessarily
+a human being, but anything animate enough to envisage having a
+conversation with, or bartering with.<br><i>Usually</i> male <i>not</i> female.<br><i>Usually not</i> neuter.<br><i>Can have</i> carrying capacity (<i>a number</i>).<br><i>yourself</i><p class="in3"><a name=K23_man></a><b>man</b>, a kind of person (<i>plural</i> men)<br>
+Represents a man or boy.<br><i>Always</i> male <i>not</i> female.<br><i>Never</i> neuter.<br><i>monk</i>&nbsp;<a href="source:story.ni#line6"><img border=0 src=inform:/Reveal.png></a><p><p class="in3"><a name=K24_woman></a><b>woman</b>, a kind of person (<i>plural</i> women)<br>
+Represents a woman or girl.<br><i>Always</i> female <i>not</i> male.<br><i>Never</i> neuter.<br><p><p class="in3"><a name=K25_animal></a><b>animal</b>, a kind of person (<i>plural</i> animals)<br>
+Represents an animal, or at any rate a
+non-human living creature reasonably large and possible to interact with: a
+giant Venus fly-trap might qualify, but not a patch of lichen.<br><p><p><p class="in2"><a name=K26_device></a><b>device</b>, a kind of thing (<i>plural</i> devices)&nbsp;<a href=inform:/doc40.html><img border=0 src=inform:/help.png></a><br>
+Represents a machine or contrivance of some
+kind which can be switched on or off.<br><i>Usually</i> switched off <i>not</i> switched on.<br><p><p class="in1"><a name=K3_direction></a><b>direction</b> (<i>plural</i> directions)<br>
+Represents a direction of movement, such
+as northeast or down.<br><i>Usually</i> unmarked for listing <i>not</i> marked for listing.<br><i>Can have</i> opposite (<i>direction</i>).<br><i>north</i>, <i>northeast</i>, <i>northwest</i>, <i>south</i>, <i>southeast</i>, <i>southwest</i>, <i>east</i>, <i>west</i>, <i>up</i>, <i>down</i>, <i>inside</i>, <i>outside</i><p class="in1"><a name=K9_region></a><b>region</b> (<i>plural</i> regions)<br>
+<p><hr><a name=A54></a><b>number</b> (<i>plural</i> numbers)<br>Whole number in the range -32768, -32767, ..., -2, -1, 0, 1, 2, 3, ..., 32767: small numbers can be written textually as 'one', 'two', 'three', ..., 'ten', 'eleven', 'twelve'. (A much larger number range is allowed if we compile the source to Glulx rather than the Z-machine: see the Settings panel.)<p><a name=A55></a><b>time</b> (<i>plural</i> times)&nbsp;<a href=inform:/doc139.html><img border=0 src=inform:/help.png></a><br>A time of day, written in the form '2:34 AM' or '12:51 PM', or a length of time such as '10 minutes' or '3 hours 31 minutes', which must be between 0 minutes and 23 hours 59 minutes inclusive.<p><a name=A56></a><b>text</b> (<i>plural</i> texts)<br>Some text in double quotation marks, perhaps with substitutions written in square brackets.<p><a name=A59></a><b>snippet</b> (<i>plural</i> snippets)<br><p><a name=A61></a><b>object</b> (<i>plural</i> objects)<br><p><a name=A62></a><b>description</b> (<i>plural</i> descriptions)<br><p><a name=A65></a><b>rule</b> (<i>plural</i> rules)<br><p><a name=A66></a><b>rulebook</b> (<i>plural</i> rulebooks)<br><p><a name=A68></a><b>action-name</b> (<i>plural</i> action-names)<br><p><a name=A70></a><b>scene</b> (<i>plural</i> scenes)<br><p><a name=A71></a><b>table-name</b> (<i>plural</i> table-names)<br><p><a name=A75></a><b>figure-name</b> (<i>plural</i> figure-names)<br><p><a name=A76></a><b>sound-name</b> (<i>plural</i> sound-names)<br><p><a name=A77></a><b>external-file</b> (<i>plural</i> external-files)<br><p><a name=A78></a><b>truth state</b> (<i>plural</i> truth states)<br>The state of whether something is 'true' or 'false'.<p><a name=A80></a><b>indexed text</b> (<i>plural</i> indexed texts)<br>A flexible-length form of text which can be internally altered and searched. Inform automatically changes text to this format when necessary.<p><a name=A81></a><b>stored action</b> (<i>plural</i> stored actions)<br>A stored action, which can later be tried.<p><a name=A82></a><b>list of</b> (<i>plural</i> lists of)<br>A flexible-length list of values.<p><hr><p>
+<small>If we create a variable, by writing, for instance, 'Zero hour is a time that varies', and do not tell Inform what value it starts out with (say, adding 'Zero hour is 11:21 PM.') then Inform uses the following table to decide the initial value. The same applies if we create a property (for instance, 'A person has a number called lucky number.'). Kinds of value not included in the table cannot be used in variables and properties.</small><p><small>A tick for <b>repeat</b> means that it's possible to repeat through values of this kind. For instance, 'repeat with T running through times:' is allowed, but 'repeat with N running through numbers:' is not - there are too many numbers for this to make sense. A tick here also means it's possible to form lists such as 'list of rulebooks', or to count the 'number of scenes'.</small><p><small>A tick for <b>props</b> means that values of this kind can have properties. For instance, 'A scene can be thrilling or dull.' makes an either/or property of a scene, but 'A number can be nice or nasty.' is not allowed because it would cost too much storage space. (Of course 'Definition:' can always be used to make adjectives applying to numbers; it's only properties which have storage worries.)</small><p><small>A tick for <b>under</b> means that it's possible to understand values of this kind. For instance, 'Understand "award [number]" as awarding.' might be allowed, if awarding were an action applying to a number, but 'Understand "run [rule]" as rule-running.' is not allowed - there are so many rules with such long names that Inform doesn't add them to its vocabulary during play.</small><p><table><tr><td><font size=2><i>kind of value</i></font></td><td><font size=2><i>default value</i></font></td><td><font size=2><i>repeat&nbsp;</i></font></td>
+<td><font size=2><i>props&nbsp;</i></font></td>
+<td><font size=2><i>under</i></font></td></tr>
+<tr><td><font size=2><b>number</b>&nbsp;&nbsp;</font></td><td><font size=2>0</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png></td></tr>
+<tr><td><font size=2><b>time</b>&nbsp;&nbsp;</font></td><td><font size=2>9:00 AM</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png></td></tr>
+<tr><td><font size=2><b>text</b>&nbsp;&nbsp;</font></td><td><font size=2>""</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>snippet</b>&nbsp;&nbsp;</font></td><td><font size=2><i>word 1 of command</i></font>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>object</b>&nbsp;&nbsp;</font></td><td><font size=2>nothing</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>description</b>&nbsp;&nbsp;</font></td><td><font size=2><i>matching nothing</i></font>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>rule</b>&nbsp;&nbsp;</font></td><td><font size=2>the little-used do nothing rule</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>rulebook</b>&nbsp;&nbsp;</font></td><td><font size=2>the action-processing rules</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>action-name</b>&nbsp;&nbsp;</font></td><td><font size=2>waiting action</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>scene</b>&nbsp;&nbsp;</font></td><td><font size=2>the Entire Game</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>table-name</b>&nbsp;&nbsp;</font></td><td><font size=2><i>a table with no rows or columns</i></font>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>figure-name</b>&nbsp;&nbsp;</font></td><td><font size=2>figure of cover</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>sound-name</b>&nbsp;&nbsp;</font></td><td><font size=2><i>a silent non-sound</i></font>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>external-file</b>&nbsp;&nbsp;</font></td><td><font size=2><i>a non-file</i></font>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>truth state</b>&nbsp;&nbsp;</font></td><td><font size=2>false</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/tick.png></td></tr>
+<tr><td><font size=2><b>indexed text</b>&nbsp;&nbsp;</font></td><td><font size=2>""</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>stored action</b>&nbsp;&nbsp;</font></td><td><font size=2>waiting</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>list of</b>&nbsp;&nbsp;</font></td><td><font size=2>{}</font>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png>&nbsp;</td><td><img border=0 src=inform:/doc_images/cross.png></td></tr>
+<tr><td><font size=2><b>thing</b></font></td><td><font size=2>the player</font></td><td><img border=0 src=inform:/doc_images/tick.png></td>
+<td><img border=0 src=inform:/doc_images/tick.png></td>
+<td><img border=0 src=inform:/doc_images/tick.png></td></tr>
+<tr><td><font size=2><b>direction</b></font></td><td><font size=2>north</font></td><td><img border=0 src=inform:/doc_images/tick.png></td>
+<td><img border=0 src=inform:/doc_images/tick.png></td>
+<td><img border=0 src=inform:/doc_images/tick.png></td></tr>
+<tr><td><font size=2>other kinds of object&nbsp;&nbsp;</font></td><td><font size=2><i>the first example created<i></font></td><td><img border=0 src=inform:/doc_images/tick.png></td>
+<td><img border=0 src=inform:/doc_images/tick.png></td>
+<td><img border=0 src=inform:/doc_images/tick.png></td></tr>
+</table>
+<p></font></body></html>

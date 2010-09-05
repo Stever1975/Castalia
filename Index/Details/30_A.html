@@ -1,0 +1,46 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Answering <font color="#000080">something</font> that <font color="#000080">some text</font> </b><a name=Answer></a> (<i>past tense</i> answered it that)<br>
+<p>The Standard Rules do
+not include any systematic way to handle conversation: instead, Inform is
+set up so that it is as easy as we can make it to write specific rules
+handling speech in particular games, and so that if no such rules are
+written then all attempts to communicate are gracefully if not very
+interestingly rejected.<br><br>The topic here can be any double-quoted text, which can itself contain
+tokens in square brackets: see the documentation on Understanding.<br><br>Answering is an action existing so that the player can say something free-form
+to somebody else. A convention of IF is that a command such as DAPHNE, TAKE
+MASK is a request to Daphne to perform an action: if the persuasion rules in
+force mean that she consents, the action 'Daphne taking the mask' does
+indeed then result. But if the player types DAPHNE, 12375 or DAPHNE, GREAT
+HEAVENS - or anything else not making sense as a command - the action
+'answering Daphne that ...' will be generated.<br><br>The name of the action arises because it is also caused by typing, say,
+ANSWER 12375 when Daphne (say) has asked a question.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;answer [text] to [someone]&quot; <i>reversed</i><br><p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor answering something that</i>&nbsp;&nbsp;<font color="#800000">block answering rule</font><br>
+<p><p></font></body></html>

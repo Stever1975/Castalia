@@ -1,0 +1,54 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Unlocking <font color="#000080">something</font> with <font color="#000080">something</font> </b><a name=Unlock></a> (<i>past tense</i> unlocked it with)<br>
+<p>Unlocking undoes the
+effect of locking, and renders the noun openable again provided that the
+actor is carrying the right key (which must be the second noun).<br><br>Unlocking can be performed on any kind of thing which provides the either/or
+properties lockable, locked, openable and open. The 'can't unlock without a lock
+rule' tests to see if the noun both provides the lockable property, and if
+it is in fact lockable: it is then assumed that the other properties can
+safely be checked. In the Standard Rules, the container and door kinds both
+satisfy these requirements.<br><br>We can create a new kind on which opening, closing, locking and unlocking
+will work thus: 'A briefcase is a kind of thing. A briefcase can be openable.
+A briefcase can be open. A briefcase can be lockable. A briefcase can be
+locked. A briefcase is usually openable, lockable, open and unlocked.'<br><br>Inform checks whether the key fits using the 'can't unlock without the correct
+key rule'. To satisfy this, the actor must be directly holding the second
+noun, and it must be the current value of the 'matching key' property for
+the noun. (This property is seldom referred to directly because it is
+automatically set by assertions like 'The silver key unlocks the wicket
+gate.')<br><br>The Standard Rules provide locking and unlocking actions at a fairly basic
+level: they can be much enhanced using the extension Locksmith by Emily
+Short, which is included with all distributions of Inform.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;open [something] with [something preferably held]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;unlock [something] with [something preferably held]&quot;<br><p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor unlocking something with</i>&nbsp;&nbsp;<font color="#800000">can't unlock without a lock rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor unlocking something with</i>&nbsp;&nbsp;<font color="#800000">can't unlock what's already unlocked rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor unlocking something with</i>&nbsp;&nbsp;<font color="#800000">can't unlock without the correct key rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor unlocking something with</i>&nbsp;&nbsp;<font color="#800000">standard unlocking rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor unlocking something with</i>&nbsp;&nbsp;<font color="#800000">standard report unlocking rule</font><br>
+<p><p></font></body></html>

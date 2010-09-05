@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x01D82990" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7 for Windows</generator>
+  <activeNode nodeId="node-0x01D83CC8"/>
+  <item nodeId="node-0x01D82990">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">You have been accepted as a novice within the order of the Castalians. You have been traveling for three days up ahead you can just begin to see the monastery shrouded in the fall mist. night approaches and with it a severe drop in temperature. The path is dangerous and you would not wish to travel it in the dark. You approach the gate of the monastery. The gate and the surrounding walls tower over you.&#x000A;&#x000A;Castalia&#x000A;An Interactive Fiction by Stephen Rowley&#x000A;Release 1 / Serial number 100828 / Inform 7 build 5U92 (I6/v6.31 lib 6/12N) SD&#x000A;&#x000A;Gate&#x000A;You approach the gate of the monastery. The gates and the surrounding walls tower over you. there is a wooden birdhouse attached to the wall beside the gate. Within the birdhouse is a small tin bell.  Carved into wood is a command "ring bell".&#x000A;&#x000A;You can see a monk and a bell here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x01D83748"/>
+      <child nodeId="node-0x01D840A8"/>
+      <child nodeId="node-0x01D83CC8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x01D83748">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Gate&#x000A;You approach the gate of the monastery. The gates and the surrounding walls tower over you. there is a wooden birdhouse attached to the wall beside the gate. Within the birdhouse is a small tin bell.  Carved into wood is a command "ring bell".&#x000A;&#x000A;You can see a mushroom here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x01D840A8">
+    <command xml:space="preserve">ring bell</command>
+    <result xml:space="preserve">you lift the bell from and begin to shake it. instead of a ring you hear a low dry clank. seconds latter you begin to hear more clanking around you. it starts softly and steadily builds.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x01D83CC8">
+    <command xml:space="preserve">talk</command>
+    <result xml:space="preserve">(to the monk)&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+</Skein>

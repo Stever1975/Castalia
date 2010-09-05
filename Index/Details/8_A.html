@@ -1,0 +1,53 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Entering <font color="#000080">something</font> </b><a name=Enter></a> (<i>past tense</i> entered)<br>
+<p>Whereas the going action allows
+people to move from one location to another in the model world, the entering
+action is for movement inside a location: for instance, climbing into a cage
+or sitting on a couch. (Entering is not allowed to change location, so any
+attempt to enter a door is converted into a going action.) What makes
+entering trickier than it looks is that the player may try to enter an
+object which is itself inside, or part of, something else, which might in
+turn be... and so on. To preserve realism, the implicitly pass through other
+barriers rule automatically generates entering and exiting actions needed
+to pass between anything which might be in the way: for instance, in a
+room with two open cages, an actor in cage A who tries entering cage B first
+has to perform an exiting action.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;get in/into/on/onto [something]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;stand on [something]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;go [something]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;go into/in/inside/through [something]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;enter [something]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;sit on top of [something]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;sit on/in/inside [something]&quot;<br><p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor entering</i>&nbsp;&nbsp;<font color="#800000">convert enter door into go rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor entering</i>&nbsp;&nbsp;<font color="#800000">convert enter compass direction into go rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor entering</i>&nbsp;&nbsp;<font color="#800000">can't enter what's already entered rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor entering</i>&nbsp;&nbsp;<font color="#800000">can't enter what's not enterable rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor entering</i>&nbsp;&nbsp;<font color="#800000">can't enter closed containers rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor entering</i>&nbsp;&nbsp;<font color="#800000">can't enter something carried rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor entering</i>&nbsp;&nbsp;<font color="#800000">implicitly pass through other barriers rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor entering</i>&nbsp;&nbsp;<font color="#800000">standard entering rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor entering</i>&nbsp;&nbsp;<font color="#800000">standard report entering rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor entering</i>&nbsp;&nbsp;<font color="#800000">describe contents entered into rule</font><br>
+<p><p></font></body></html>

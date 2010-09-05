@@ -1,0 +1,51 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Exiting </b><a name=Exit></a> (<i>past tense</i> exited)<br>
+<p>Whereas the going action allows
+people to move from one location to another in the model world, and the
+entering action is for movement deeper inside the objects in a location,
+the exiting action is for movement back out towards the main floor area.
+Climbing out of a cupboard, for instance, is an exiting action. Exiting
+when already in the main floor area of a room with a map connection to
+the outside is converted to a going action. Finally, note that whereas
+entering works for either containers or supporters, exiting is purely for
+getting oneself out of containers: if the actor is on top of a supporter
+instead, an exiting action is converted to the getting off action.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;get out/off/up&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;stand&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;stand up&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;exit&quot;<br><p><b>Named values belonging to this action</b><p>
+container exited from ... <i>the name of an object</i><br>
+<p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;set action variables&nbsp;&nbsp;&nbsp;&nbsp;<i>exiting</i>&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor exiting</i>&nbsp;&nbsp;<font color="#800000">convert exit into go out rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor exiting</i>&nbsp;&nbsp;<font color="#800000">can't exit when not inside anything rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor exiting</i>&nbsp;&nbsp;<font color="#800000">can't exit closed containers rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor exiting</i>&nbsp;&nbsp;<font color="#800000">convert exit into get off rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor exiting</i>&nbsp;&nbsp;<font color="#800000">standard exiting rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor exiting</i>&nbsp;&nbsp;<font color="#800000">standard report exiting rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor exiting</i>&nbsp;&nbsp;<font color="#800000">describe room emerged into rule</font><br>
+<p><p></font></body></html>

@@ -1,0 +1,51 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Throwing <font color="#000080">something</font> at <font color="#000080">something</font> </b><a name=ThrowAt></a> (<i>past tense</i> thrown it at)<br>
+<p>Throwing something at
+someone or something is difficult for Inform to model. So many considerations
+apply: just because the actor can see the target, does it follow that the
+target can accurately hit it? What if the projectile is heavy, like an
+anvil, or something not easily aimable, like a feather? What if there
+is a barrier in the way, like a cage with bars spaced so that only items
+of a certain size get through? And then: what should happen as a result?
+Will the projectile break, or do damage, or fall to the floor, or into
+a container or onto a supporter? And so on.<br><br>Because it seems hopeless to try to model this in any general way,
+Inform instead provides the action for the user to attach specific rules to.
+The check rules in the Standard Rules simply require that the projectile
+is not an item of clothing still worn (this will be relevant for women
+attending a Tom Jones concert) but then, in either the 'futile to throw
+things at inanimate objects rule' or the 'block throwing at rule', will
+refuse to carry out the action with a bland message.<br><br>To make throwing do something, then, we must either write Instead rules
+for special circumstances, or else unlist these check rules and write
+suitable carry out and report rules to pick up the thread.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;drop [something preferably held] at/against/on/onto [something]&quot;<br><p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor throwing something at</i>&nbsp;&nbsp;<font color="#800000">implicitly remove thrown clothing rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor throwing something at</i>&nbsp;&nbsp;<font color="#800000">futile to throw things at inanimate objects rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor throwing something at</i>&nbsp;&nbsp;<font color="#800000">block throwing at rule</font><br>
+<p><p></font></body></html>

@@ -1,0 +1,42 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Looking under <font color="#000080">something</font> </b><a name=LookUnder></a> (requires light) (<i>past tense</i> looked under)<br>
+<p>The standard Inform world
+model does not have a concept of things being under other things, so this
+action is only minimally provided by the Standard Rules, but it exists here
+for traditional reasons (and because, after all, LOOK UNDER TABLE is the
+sort of command which ought to be recognised even if it does nothing useful).
+The action ordinarily either tells the player he finds nothing of interest,
+or reports that somebody else has looked under something.<br><br>The usual way to make this action do something useful is to write a rule
+like 'Instead of looking under the cabinet for the first time: now the
+player has the silver key; say ...' and so on.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;look under [something]&quot;<br><p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor looking under</i>&nbsp;&nbsp;<font color="#800000">standard looking under rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor looking under</i>&nbsp;&nbsp;<font color="#800000">report other people looking under rule</font><br>
+<p><p></font></body></html>

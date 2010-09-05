@@ -1,0 +1,54 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Going <font color="#000080">something</font> </b><a name=Go></a> (<i>past tense</i> gone)<br>
+<p>This is the action which allows people
+to move from one room to another, using whatever map connections and doors are
+to hand. The Standard Rules are written so that the noun can be either a
+direction or a door in the location of the actor: while the player's commands
+only lead to going actions with directions as nouns, going actions can also
+happen as a result of entering actions, and then the noun can indeed be
+a door.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;go&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;go [direction]&quot;<br><p><b>Named values belonging to this action</b><p>
+room gone from ... <i>room</i><br>
+room gone to ... <i>the name of an object</i><br>
+door gone through ... <i>the name of an object</i><br>
+vehicle gone by ... <i>the name of an object</i><br>
+thing gone with ... <i>the name of an object</i><br>
+<p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;set action variables&nbsp;&nbsp;&nbsp;&nbsp;<i>going</i>&nbsp;&nbsp;<font color="#800000">standard set going variables rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor going</i>&nbsp;&nbsp;<font color="#800000">can't travel in what's not a vehicle rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor going</i>&nbsp;&nbsp;<font color="#800000">can't go through undescribed doors rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor going</i>&nbsp;&nbsp;<font color="#800000">can't go through closed doors rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor going</i>&nbsp;&nbsp;<font color="#800000">determine map connection rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor going</i>&nbsp;&nbsp;<font color="#800000">can't go that way rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor going</i>&nbsp;&nbsp;<font color="#800000">move player and vehicle rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor going</i>&nbsp;&nbsp;<font color="#800000">move floating objects rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor going</i>&nbsp;&nbsp;<font color="#800000">check light in new location rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor going</i>&nbsp;&nbsp;<font color="#800000">describe room gone into rule</font><br>
+<p><p></font></body></html>

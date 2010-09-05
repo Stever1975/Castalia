@@ -1,0 +1,45 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Removing <font color="#000080">something</font> from <font color="#000080">something</font> </b><a name=Remove></a> (<i>past tense</i> removed it from)<br>
+<p>Removing is not really
+an action in its own right. Whereas there are many ways to put something down
+(on the floor, on top of something, inside something else, giving it to
+somebody else, and so on), Inform has only one way to take something: the
+taking action. Removing exists only to provide some nicely worded replies
+to impossible requests, and in all sensible cases is converted into taking.
+Because of this, it's usually a bad idea to write rules about removing:
+if you write a rule such as 'Instead of removing the key, ...' then it
+won't apply if the player simply types TAKE KEY instead. The safe way to
+do this is to write a rule about taking, which covers all possibilities.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;take [things inside] from [something]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;take [things inside] off [something]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;get [things inside] from [something]&quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;remove [things inside] from [something]&quot;<br><p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor taking</i>&nbsp;&nbsp;<font color="#800000">can't take component parts rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor removing something from</i>&nbsp;&nbsp;<font color="#800000">can't remove what's not inside rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor removing something from</i>&nbsp;&nbsp;<font color="#800000">can't remove from people rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor removing something from</i>&nbsp;&nbsp;<font color="#800000">convert remove to take rule</font><br>
+<p><p></font></body></html>

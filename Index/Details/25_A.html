@@ -1,0 +1,46 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  <!--
+    p.hang {
+      padding-left: 25px;
+      text-indent: -25px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p.in1 {
+      padding-left: 0px;
+    }
+    p.in2 {
+      padding-left: 25px;
+    }
+    p.in3 {
+      padding-left: 50px;
+    }
+    p.in4 {
+      padding-left: 75px;
+    }
+    p.in5 {
+      padding-left: 100px;
+    }
+  -->
+</style></head>
+<body><font size=2><b><img border=0 src=inform:/Beneath.png>&nbsp;<font color="#006020"><i>Detail view</i></font>&nbsp;&nbsp;<a href=../Actions.html><font color="#006020"><i>Back to full view</i></font></a></b><p>
+<hr><p>
+<b>Showing <font color="#000080">something</font> to <font color="#000080">something</font> </b><a name=Show></a> (<i>past tense</i> shown it to)<br>
+<p>Anyone can show anyone
+else something which they are carrying, but not some nearby piece of
+scenery, say - so this action is suitable for showing the emerald locket
+to Katarina, but not showing the Orange River Rock Room to Mr Douglas.<br><br>The Standard Rules implement this action in only a minimal way, checking
+that it makes sense but then blocking all such attempts with a message
+such as 'Katarina is not interested.' - this is the task of the 'block
+showing rule'. As a result, there are no carry out or report rules. To
+make it into a systematic and interesting action, we would need to
+unlist the block showing rule and then to write carry out and report
+rules: but usually for IF purposes we only need to make a handful of
+special cases of showing work properly, and for those we can simply
+write Instead rules to handle them.<p><hr><p><b>Typed commands leading to this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;show [someone] [something preferably held]&quot; <i>reversed</i><br>&nbsp;&nbsp;&nbsp;&nbsp;&quot;show [something preferably held] to [someone]&quot;<br><p><b>Rules controlling this action</b><p>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor showing something to</i>&nbsp;&nbsp;<font color="#800000">can't show what you haven't got rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor showing something to</i>&nbsp;&nbsp;<font color="#800000">convert show to yourself to examine rule</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;check&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor showing something to</i>&nbsp;&nbsp;<font color="#800000">block showing rule</font><br>
+<p><p></font></body></html>
